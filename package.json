@@ -7,7 +7,7 @@
     "clean": "rimraf dist",
     "test": "NODE_ENV=test mocha -G --compilers js:babel-core/register,css:./scripts/css-null-compiler src/**/*.test.js",
     "test:watch": "npm test -- --watch",
-    "lint": "eslint scripts/**/*.js src/**/*.js? *.js && echo 'no lint errors!'",
+    "lint": "eslint . && echo 'no lint errors!'",
     "lint:watch": "npm run lint -s; onchange src scripts *.js .eslint* -- npm run lint -s",
     "start": "parallelshell 'npm run lint:watch' 'npm run serve:dev'",
     "preserve:prod": "npm run build",
@@ -53,7 +53,8 @@
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-dev-server": "^1.14.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-middleware": "^2.6.0",
+    "worker-loader": "^0.7.0"
   },
   "dependencies": {}
 }
