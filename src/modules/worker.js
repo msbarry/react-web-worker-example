@@ -1,6 +1,8 @@
 import calc from './other';
+import { handle } from './actors';
 
-self.onmessage = (event) => {
-  const { id, value } = event.data;
-  postMessage({ id, value: calc(value) });
-};
+handle({
+  add(value, cb) {
+    cb(undefined, calc(value));
+  }
+});
