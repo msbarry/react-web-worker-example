@@ -1,1 +1,1 @@
-My boilerplate for react projects.
+Example using web workers with react, webpack, and friends.

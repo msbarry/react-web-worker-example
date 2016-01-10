@@ -1,7 +1,7 @@
 {
-  "name": "my-react-boilerplate",
+  "name": "react-web-worker-example",
   "version": "1.0.0",
-  "description": "My react boilerplate",
+  "description": "Example using web workers with react, webpack, and friends",
   "private": true,
   "scripts": {
     "clean": "rimraf dist",
